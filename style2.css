@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-image: url(vida.webp);
+    background-position: center top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #9d0f09;
+}
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #FFFFFF;
+    display: block;
+    margin-right: 20px;
+
+}
+
+.menu .navbar ul li a:hover {
+    color:#ffffff ;
+    background: #680d0d;
+}
+.menu-icono {
+    width: 30px;
+    margin-left: 30px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.welcome {
+    display: flex;
+}
+
+.welcome-1{
+    background: url(fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0%;
+    
+}
+
+.welcome-2 {
+    width: 100%;
+    padding: 100px 70px 100px 70px;
+    background-color: #9d0f09;
+
+}
+h2 {
+    font-size: 70px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+.parrafo{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    margin: 25px 0;
+    
+}
+hr{
+    border: 2px solid #CF2D3A;
+    width: 500px;
+    
+}
+
+.b1 {
+    color: #fffcfc;
+    text-align: justify;
+
+}
+
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+.services-txt h2 {
+    color: #000000;
+}
+
+
+.services-txt p {
+    padding: 20px 100px;
+
+}
+.services-txt2{
+    padding: 40px 150px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    text-align: justify;
+
+}
+
+.services-1 {
+    background-color: #9d0f09;
+    padding: 30px 25px;
+    margin:0 10px;
+    border-radius: 15px;
+    
+}
+
+.services-1 img {
+    width: 350px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    margin-left: 20px;
+    border-radius: 3%;
+}
+
+.services-1 img:hover{
+    transform: scale(0.9);
+}
+
+.services-1 h3 {
+    font-size: 25px;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+
+
+
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    text-align: justify;
+
+}
+
+.personal-1 {
+    text-align: center;
+}
+
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease;
+
+}
+
+.personal-1 img:hover{
+    transform: scale(0.9);
+}
+
+
+.personal-1 h3 {
+    font-size: 22px;
+}
+
+.personal-1 p {
+    padding: 0 50px;
+
+}
+
+.personal-1 a {
+    color: #faf7f7;
+}
+
+.footer-bg {
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+
+.footer-txt {
+    text-align: center;
+    padding: 10px;
+    background-color: #9d0f09;
+    font-size: 15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+
+.footer-txt a{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+

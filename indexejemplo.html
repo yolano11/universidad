@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menú desplegable</title>
+	<style type="text/css">
+		/* Estilos para el menú */
+		.menu {
+			display: inline-block;
+			position: relative;
+			margin-top: 20px;
+			margin-left: 20px;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+		}
+
+		.menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,.2);
+		}
+
+		.menu ul li {
+			display: block;
+			position: relative;
+			float: left;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.menu ul li a {
+			display: block;
+			padding: 10px 12px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.menu ul li:hover > ul {
+			display: block;
+		}
+
+		.menu ul ul {
+			display: none;
+			position: absolute; 
+			top: 100%;
+			left: 0;
+			background-color:#fff; 
+			padding-left:0px; 
+			border-radius:5px; 
+			box-shadow:none; 
+			margin-top:-1px; 
+			z-index:-1; 
+		}
+
+		.menu ul ul li {
+			float:none; 
+			display:list-item; 
+			position:relative; 
+			border-bottom:none; 
+			border-left:none; 
+			border-right:none; 
+		}
+
+		.menu ul ul li a {
+			padding-top:10px; 
+			padding-bottom:10px; 
+			padding-left:10%; 
+			width:80%; 
+			display:block; 
+			text-decoration:none; 
+			
+		}
+		
+    </style>
+</head>
+<body>
+
+<!-- Menú desplegable -->
+<div class="menu">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a>
+            <ul>
+                <li><a href="#">Producto 1</a></li>
+                <li><a href="#">Producto 2</a></li>
+                <li><a href="#">Producto 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

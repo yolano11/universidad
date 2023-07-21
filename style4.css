@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+  font-family: 'Alegreya Sans SC', sans-serif;
+   
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-image: url(Stand.webp);
+    background-position: center top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   background: #9d0f09;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    margin-right: 20px;
+
+}
+.menu .navbar ul li a:hover {
+    color:#ffffff ;
+    background:#680d0d ;
+}
+.menu-icono {
+    width: 25px;
+    margin-left: 30px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.footer-bg {
+    background-image: url(foto1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 40%;
+    left: 120%;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #9d0f09;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #9d0f09;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #9d0f09;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #9d0f09;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline #9d0f09;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: grey;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #9d0f09;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
